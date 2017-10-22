@@ -1,0 +1,11 @@
+#text {
+    color: red;
+}
+
+#rBtn {
+    border: 1px solid red;
+    width: 150px;
+    display: none;
+    padding: 5px;
+    margin: 0% 25%;
+}
