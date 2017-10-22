@@ -9,7 +9,9 @@
     </head>
     <body>
         <div id="text">Bienvenu dans notre ShowRoom</div>
-        <div id="rBtn">Lit <input type="radio" name="r" id="r1">Armoire <input type="radio" name="r" id="r2"></div>
+        <div id="rBtn">Lit <input type="radio" name="r" id="r1">Armoire <input type="radio" name="r" id="r2" checked></div>
+
+        <div id="res"></div><a href="etape1.php">Add a product</a>
 
         <script src="scripts/jquery-3.2.1.min.js"></script>
         <script src="scripts/script.js"></script>

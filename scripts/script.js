@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    GetData();
     $("#text").animate({
         fontSize : "3em",
         left : "100px",
@@ -15,4 +16,16 @@ $(document).ready(function(){
             $(".lit").hide();
         }
     });
+
+    function GetData(){
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "read.php", true);
+
+        xhr.send(null);
+        xhr.onreadystatechange = function() {
+            if((xhr.readyState == 4) && (xhr.status == 200)){
+                document.getElementById("res").innerHTML = xhr.responseText;
+            }
+        };
+    }
 });
